@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: transparent; 
+  color: #00eeff;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+main {
+  margin-top: 60px; /* mais próximo do menu */
+  background: transparent; 
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  padding: 10px; /* Espaçamento ao redor do menu (ou do topo)*/
+}
+
+header nav ul {
+  display: flex;
+  gap: 50px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 12px 30px;
+  border: 1.5px solid #00f0ff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 8px #00f0ff, 0 0 20px #00f0ff;
+  list-style: none;
+}
+
+header nav ul li a {
+  position: relative;
+  color: #00f0ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding: 5px 12px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #00f0ff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+
+header nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+form {
+  margin-bottom: 10px;
+  background: #111;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #555;
+  width: 100%;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+form h1 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Pesquisa nome e genero */
+#containerSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+#containerSection form {
+    flex: 0 1 300px; /* Diminui a base flexível  */
+    max-width: 300px; /* Reduz a largura máxima  */
+    padding: 10px 12px; /* Reduz o padding interno */
+    border-radius: 8px; /* Bordas menos arredondadas */
+}
+#containerSection form:nth-child(2) {
+    flex: 0 1 220px; 
+    max-width: 200px;
+}
+/* Ajuste para os elementos internos */
+#containerSection select, 
+#containerSection input[type="submit"] {
+    font-size: 11px; /* Fonte um pouco menor */
+    padding: 2px 4px; /* Padding reduzido */
+}
+#containerSection form h1 {
+    font-size: 13px; /* Título menor */
+    margin-bottom: 3px; /* Espaçamento reduzido */
+    letter-spacing: 1px; /* Espaçamento entre letras menor */
+}
+
+
+select,
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 3px 6px;
+  margin-top: 4px;
+  background: #222;
+  color: #eee;
+  border: 1px solid #666;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+select option {
+  background-color: #000;
+  color: #fff;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="submit"]:focus {
+  outline: none;
+  border-color: #fff;
+  background: #333;
+}
+
+input[type="submit"] {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+  border-color: transparent; /* Remove completamente a borda */
+}
+
+/* CARD Manga*/
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */
+  gap: 20px; /* Espaço entre os cards */
+  width: 100%;
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+.card-manga {
+  width: 100%; /* Ocupa 100% da coluna */
+  display: flex;
+  background-color: #111;
+  border: 1px solid #555;
+  overflow: hidden;
+}
+.card-manga:hover {
+  transform: none;
+  filter: none;
+}
+.card-img {
+  flex: 1;
+  max-width: 300px;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: none;
+}
+.card-manga:hover .card-img img {
+  filter: none;
+}
+.card-info {
+  flex: 2;
+  padding: 20px;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+.card-info h2 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.card-info p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+
+/* Sinopse */
+.sinopse {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #111;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: none;
+  /* Estilização da barra de scroll */
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: #000000 #f1f1f1; /* Para Firefox */
+}
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+.sinopse::-webkit-scrollbar {
+    width: 8px;
+}
+.sinopse::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+.sinopse::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+.sinopse::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Mensagem de aviso */
+.mensagem-aviso {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  background-color: black;
+  border-left: 3px solid #ffffff;
+  letter-spacing: 0.5px;
+}
+
+
+/* Slider*/
+.slider {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Garante que fique atrás de tudo */
+}
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6) contrast(1.2);
+}

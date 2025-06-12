@@ -1,0 +1,48 @@
+nome:  Kagurabachi
+nome autor:    Takeru Hokazono
+ano lançamento:   2023
+volumes:    7
+gênero: shonen 
+
+Sinopse: Na trama de Kagurabachi, acompanhamos Chihiro Rokuhira, um jovem que decide seguir os passos de seu pai e se tornar um espadachim. No entanto, sua vida muda drasticamente quando um trágico incidente destrói tudo o que ele conhecia, o forçando a trilhar um caminho de vingança.
+
+/////////////////////////////////////
+nome:        Claymore
+autor:     Norihiro Yagi
+ano lancamento:    2001
+volumes:    27
+genero:     shōnen
+Sinopse: História de um mundo medieval, onde humanos são assombrados por seres chamados Youma, que se alimentam de vísceras humanas. Para conter essa ameaça, uma misteriosa organização, "A Organização", cria guerreiras híbridas, as Claymore, meio humanas e meio Youma, para caçar e eliminar Youmas.
+
+
+/////////////////////////////////////
+nome:     Blame!
+autor:        Nihei Tsutomu
+ano lancamento:   1997
+volumes:      10
+genero:       seinen
+Sinopse: Em um futuro no qual a humanidade foi quase toda dizimada, Killy é um aventureiro que vive um uma superestrutura vertical repleta de corredores, escadarias e até cavernas. Ele passa seus dias lutando para sobreviver, enfrentando ciborgues assassinos e monstros mutantes ao mesmo tempo em que tenta acessar a rede de computadores para localizar a informação necessária para salvar os seres humanos restantes.
+
+/////////////////////////////////////
+nome:       The Legend of Dororo and Hyakkimaru
+autor:        Satoshi Shiki
+ano lancamento:    2018
+volumes:         11
+genero:         	Seinen
+sinopse: "A Lenda de Dororo e Hyakkimaru" conta a história de Hyakkimaru, um jovem que foi roubado da sua humanidade por 48 demônios que invadiram o seu corpo. Para recuperar sua essência, Hyakkimaru embarca numa jornada pelo Japão, acompanhado de Dororo, um órfão ladrão, com o objetivo de derrotar os demônios que o roubaram. 
+
+/////////////////////////////////////
+nome:    Uzumaki
+autor:   Junji Ito
+ano lancamento:    1998
+volumes:    3
+genero:       	Horror
+sinopse:  O enredo de Uzumaki segue uma adolescente do ensino médio Kirie Goshima (五島桐絵) e o namorado dela Shuichi Saito (斎藤秀一), e os cidadãos da pequena cidade japonesa fictícia de Kurôzu-cho (黒渦町), que é amaldiçoada por eventos sobrenaturais que envolvem espirais.
+
+/////////////////////////////////////
+
+nome:
+autor:
+ano lancamento:
+volumes:  
+genero:

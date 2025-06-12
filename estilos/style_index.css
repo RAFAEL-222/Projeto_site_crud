@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  background: #000; /* fundo escuro para destacar */
+}
+
+/* Menu  */
+.menu {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 10px 30px;
+  border: 1.5px solid #00f0ff;
+  
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 8px #00f0ff,
+    0 0 20px #00f0ff;
+}
+
+.menu a {
+  position: relative;
+  color: #00f0ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 3px;
+  padding: 3px 11px;
+  transition: color 0.3s ease;
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #00f0ff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.slider {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: margin-left 1s;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+/* Navegação manual */
+.manual-navigation {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 2;
+}
+
+.manual-btn {
+  border: 2px solid #00f0ff;
+  padding: 10px;
+  margin: 0 15px;
+  background: rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+.manual-btn:hover {
+  background: #00f0ff;
+}
+
+/* Lógica de navegação por radio */
+#radio1:checked ~ .slider .slides {
+  margin-left: 0;
+}
+#radio2:checked ~ .slider .slides {
+  margin-left: -100vw;
+}
+#radio3:checked ~ .slider .slides {
+  margin-left: -200vw;
+}
+#radio4:checked ~ .slider .slides {
+  margin-left: -300vw;
+}
